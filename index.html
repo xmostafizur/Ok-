@@ -13,7 +13,10 @@
             background-color: black;
             height: 100vh;
             margin: 0;
-            overflow: hidden; /* Prevent scroll bars from appearing */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .stars-container {
@@ -22,6 +25,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
 
         .star {
@@ -56,6 +60,7 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 50px;
+            text-align: center;
         }
 
         #typing {
@@ -79,6 +84,7 @@
             border-radius: 50%;
             width: 200px;
             height: 200px;
+            margin-bottom: 20px;
         }
 
         .button-container {
@@ -91,7 +97,7 @@
 
         .button {
             display: inline-block;
-            padding: 10px 80px;
+            padding: 10px 30px;
             border-radius: 25px;
             color: #fff;
             font-weight: bold;
@@ -101,6 +107,7 @@
             margin: 10px 0; /* Add space between buttons */
             width: 100%; /* Make buttons full width */
             max-width: 300px; /* Set a max width for buttons */
+            text-align: center; /* Center text inside buttons */
         }
 
         .facebook-button {
@@ -155,15 +162,13 @@
         }
     </script>
 
-    <div style="text-align:center;">
-        <img src="https://telegra.ph/file/1930b2b65911efbb25b0c.jpg" alt="Head profile picture" width="180" height="180" class="profile-pic">
-    </div>
     <div id="profile">
+        <img src="https://telegra.ph/file/1930b2b65911efbb25b0c.jpg" alt="Head profile picture" width="180" height="180" class="profile-pic">
         <h1>Hi! I'm <br><span id="typing"></span><span id="cursor">_</span></h1>
     </div>
 
     <script>
-        const words = ["|Mostafizur", "|Student", "|Developer", "|Hacker", "|Diploma Engineer"];
+        const words = ["|sujon", "|Student", "|Developer", "|Designer", "|anime lover"];
         const typing = document.getElementById("typing");
         let currentWordIndex = 0;
         let currentLetterIndex = 0;
